@@ -26,6 +26,7 @@ Spent some time researching and playing with color options, and different gestur
 
 Walkthrough of all user stories (GIF, video also available in repo):
 
+![Walkthrough GIF](tippy_walkthrough.gif)
 
 
 Shoutouts:
