@@ -38,7 +38,7 @@ class SettingsStore{
         if index != nil {
             return index!
         }
-        return -1
+        return 0
     }
     
     var localeTest: NSLocale{

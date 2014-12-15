@@ -4,7 +4,7 @@ Tip Calculator Prework for Codepath Swift iOS bootcamp
 
 This is an iOS Swift demo application for applying to Codepath's Swift iOS bootcamp. See the [Tip Calculator tutorial](https://gist.github.com/timothy1ee/6858b706304a2397a7e2) and [video](http://vimeo.com/102084767).
 
-Time spent: 
+Time spent:
 * 1.5 hours for tutorial videos
 * 6 hours spent on core exercise + extras
 
@@ -19,9 +19,14 @@ Completed tasks:
  * [x] Extra: Add a light/dark color theme for the calculator view
  * [x] Extra: Add swipe gestures for opening/closing the settings modal
  * [x] Extra: Provide option to round total amount to the nearest currency unit
- 
+
 Notes:
 
 Spent some time researching and playing with color options, and different gestures.
 
-Walkthrough of all user stories:
+Walkthrough of all user stories (GIF, video also available in repo):
+
+
+
+Shoutouts:
+Since I couldn't use licecap, I used QuickTime and [the following command line](https://gist.github.com/dergachev/4627207) to generate the GIF.
