@@ -12,16 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter bill" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" id="2mT-O8-tJO">
-                                <rect key="frame" x="128" y="189" width="176" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.25556062882202235" green="0.58512863005050497" blue="0.46548450723330903" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="GVe-c3-leQ"/>
-                                </connections>
-                            </textField>
                             <view opaque="NO" alpha="0.0" contentMode="scaleToFill" id="W13-cc-E43">
                                 <rect key="frame" x="7" y="279" width="315" height="356"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,7 +91,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$30.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H4B-9M-VZy">
-                                        <rect key="frame" x="248" y="315" width="53" height="21"/>
+                                        <rect key="frame" x="77" y="315" width="224" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -117,6 +107,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter bill" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" id="2mT-O8-tJO">
+                                <rect key="frame" x="11" y="179" width="293" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.25556062882202235" green="0.58512863005050497" blue="0.46548450723330903" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="GVe-c3-leQ"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -134,6 +134,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="2mT-O8-tJO" id="1YM-KN-Zzv"/>
+                        <outlet property="settingsButton" destination="Yvw-UH-ecq" id="5nt-V3-6VG"/>
                         <outlet property="tipControl" destination="eIS-UG-Ixn" id="5K8-Wp-oZS"/>
                         <outlet property="tipLabel" destination="O6v-tj-qBb" id="Oem-Xt-ELT"/>
                         <outlet property="totalAndTipsViews" destination="W13-cc-E43" id="RfV-QJ-pbB"/>
