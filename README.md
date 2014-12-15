@@ -2,7 +2,7 @@ tippy
 =====
 Tip Calculator Prework for Codepath Swift iOS bootcamp
 
-This is an iOS Swift demo application for applying to Codepath's Swift iOS bootcamp. See the [Tip Calculator tutorial](https://gist.github.com/timothy1ee/6858b706304a2397a7e2) and [video](http://vimeo.com/102084767)
+This is an iOS Swift demo application for applying to Codepath's Swift iOS bootcamp. See the [Tip Calculator tutorial](https://gist.github.com/timothy1ee/6858b706304a2397a7e2) and [video](http://vimeo.com/102084767).
 
 Time spent: 
 * 1.5 hours for tutorial videos
