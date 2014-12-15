@@ -13,6 +13,9 @@
 		2D74952D1A3E21D600DB7E09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D74952C1A3E21D600DB7E09 /* Images.xcassets */; };
 		2D7495301A3E21D600DB7E09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D74952E1A3E21D600DB7E09 /* LaunchScreen.xib */; };
 		2D74953C1A3E21D600DB7E09 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74953B1A3E21D600DB7E09 /* tipsTests.swift */; };
+		2D7495461A3E2EA200DB7E09 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7495451A3E2EA200DB7E09 /* SettingsViewController.swift */; };
+		2D7495491A3E36AA00DB7E09 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7495481A3E36AA00DB7E09 /* Extensions.swift */; };
+		2D74954B1A3E38D800DB7E09 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74954A1A3E38D800DB7E09 /* SettingsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2D7495351A3E21D600DB7E09 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D74953A1A3E21D600DB7E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D74953B1A3E21D600DB7E09 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		2D7495451A3E2EA200DB7E09 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2D7495481A3E36AA00DB7E09 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2D74954A1A3E38D800DB7E09 /* SettingsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,14 @@
 		2D7495221A3E21D600DB7E09 /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				2D7495471A3E2EA600DB7E09 /* Viiew Controllers */,
 				2D7495251A3E21D600DB7E09 /* AppDelegate.swift */,
-				2D7495271A3E21D600DB7E09 /* ViewController.swift */,
 				2D7495291A3E21D600DB7E09 /* Main.storyboard */,
 				2D74952C1A3E21D600DB7E09 /* Images.xcassets */,
 				2D74952E1A3E21D600DB7E09 /* LaunchScreen.xib */,
 				2D7495231A3E21D600DB7E09 /* Supporting Files */,
+				2D7495481A3E36AA00DB7E09 /* Extensions.swift */,
+				2D74954A1A3E38D800DB7E09 /* SettingsStore.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -110,6 +118,15 @@
 				2D74953A1A3E21D600DB7E09 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D7495471A3E2EA600DB7E09 /* Viiew Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D7495271A3E21D600DB7E09 /* ViewController.swift */,
+				2D7495451A3E2EA200DB7E09 /* SettingsViewController.swift */,
+			);
+			name = "Viiew Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +178,11 @@
 				TargetAttributes = {
 					2D74951F1A3E21D600DB7E09 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = VY2PQ83F54;
 					};
 					2D7495341A3E21D600DB7E09 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = VY2PQ83F54;
 						TestTargetID = 2D74951F1A3E21D600DB7E09;
 					};
 				};
@@ -214,6 +233,9 @@
 			files = (
 				2D7495281A3E21D600DB7E09 /* ViewController.swift in Sources */,
 				2D7495261A3E21D600DB7E09 /* AppDelegate.swift in Sources */,
+				2D7495461A3E2EA200DB7E09 /* SettingsViewController.swift in Sources */,
+				2D74954B1A3E38D800DB7E09 /* SettingsStore.swift in Sources */,
+				2D7495491A3E36AA00DB7E09 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +378,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -367,6 +391,7 @@
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
 			name = Debug;
@@ -375,6 +400,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -382,6 +409,7 @@
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
 			name = Release;
